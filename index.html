@@ -109,7 +109,7 @@
       font-size: 16px;
       line-height: 1.7;
       margin: 0 0 18px;
-      max-width: 58ch;
+      max-width: 62ch;
     }
 
     .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top: 14px}
@@ -252,6 +252,7 @@
 <body>
   <div class="container">
 
+    <!-- ====== NAV ====== -->
     <div class="nav">
       <div class="brand"><span class="dot"></span> HamzaKaram</div>
       <div class="navlinks">
@@ -262,66 +263,76 @@
       <a class="btn btnPrimary" href="#projects">Voir mes projets</a>
     </div>
 
+    <!-- ====== HERO ====== -->
     <div class="hero" id="top">
       <div class="heroCard">
-        <div class="badge"><span></span> Portfolio • Data Analytics</div>
-        <h1>Je transforme les données en <span class="grad">décisions claires</span>.</h1>
+        <div class="badge"><span></span> Data Analyst Portfolio • Excel • Power BI • Python</div>
+
+        <h1>Je transforme les données en <span class="grad">insights</span> actionnables.</h1>
+
         <p class="subtitle">
-          Data Analyst (Excel, Power BI, Python). J’analyse, je nettoie, je construis des KPI et des dashboards
-          pour raconter une histoire avec les données.
+          Bienvenue sur mon portfolio GitHub. Ici tu trouveras mes projets d’analyse de données :
+          nettoyage, KPI, dashboards, storytelling et recommandations business (Excel, Power BI, Python).
         </p>
 
         <div class="ctaRow">
-          <!-- Remplace ces liens par tes vrais liens -->
+          <!-- GitHub principal -->
           <a class="btn btnPrimary" href="https://github.com/HamzaKaram01" target="_blank">GitHub</a>
+
+          <!-- Repo Portfolio (celui que tu as partagé) -->
+          <a class="btn" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio" target="_blank">Repo Portfolio</a>
+
+          <!-- Mets ton vrai LinkedIn -->
           <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-          <a class="btn" href="#" target="_blank">Télécharger CV</a>
+
+          <!-- Option CV : upload un PDF dans assets/cv.pdf puis remplace le lien -->
+          <a class="btn" href="assets/cv.pdf" target="_blank">Télécharger CV</a>
         </div>
       </div>
 
       <div class="profileCard">
-        <!-- IMPORTANT : mets ta photo dans assets/profile.jpg -->
         <img class="avatar" src="assets/profile.jpg" alt="Photo de Hamza Karam" />
         <div class="name">Hamza Karam</div>
         <div class="role">Data Analyst • Excel • Power BI • Python</div>
 
         <div class="chips">
-          <span class="chip">Dashboards</span>
-          <span class="chip">KPI</span>
           <span class="chip">Data Cleaning</span>
+          <span class="chip">KPI</span>
+          <span class="chip">Dashboards</span>
           <span class="chip">Storytelling</span>
         </div>
       </div>
     </div>
 
+    <!-- ====== PROJECTS ====== -->
     <div class="section" id="projects">
       <div class="sectionTitle">
-        <h2>Projets sélectionnés</h2>
-        <div class="hint">3 projets forts > 10 projets moyens. Ajoute des screenshots dans chaque repo.</div>
+        <h2>Projets</h2>
+        <div class="hint">Chaque carte pointe vers ton dossier projet dans le repo “Data-Analyst-Portfolio”.</div>
       </div>
 
       <div class="grid">
         <div class="card">
           <h3>📊 Ecommerce Sales (Excel)</h3>
-          <p>Analyse des ventes : nettoyage, KPI, TCD, visualisation et recommandations business.</p>
+          <p>Nettoyage, KPI, tableaux croisés, visualisations et recommandations business.</p>
           <div class="tagRow">
-            <span class="tag">Excel</span><span class="tag">KPI</span><span class="tag">TCD</span>
+            <span class="tag">Excel</span><span class="tag">KPI</span><span class="tag">Pivot</span>
           </div>
           <div class="meta">
-            <span class="hint">2026</span>
-            <a class="link" href="https://github.com/HamzaKaram01" target="_blank">Voir →</a>
+            <span class="hint">Portfolio</span>
+            <a class="link" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio/tree/main/01-Ecommerce-Excel" target="_blank">Voir →</a>
           </div>
         </div>
 
         <div class="card">
-          <h3>📈 Maven Market (Power BI)</h3>
-          <p>Dashboard interactif : ventes, marge, top produits, segmentation clients, filtre par période.</p>
+          <h3>🏢 Office Sales (Excel)</h3>
+          <p>Analyse des ventes (segmentation, tendances, reporting) avec un rendu clair.</p>
           <div class="tagRow">
-            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Dashboard</span>
+            <span class="tag">Excel</span><span class="tag">Reporting</span><span class="tag">Insights</span>
           </div>
           <div class="meta">
-            <span class="hint">2026</span>
-            <a class="link" href="https://github.com/HamzaKaram01" target="_blank">Voir →</a>
+            <span class="hint">Portfolio</span>
+            <a class="link" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio/tree/main/02-Office-Excel" target="_blank">Voir →</a>
           </div>
         </div>
 
@@ -332,50 +343,89 @@
             <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">EDA</span>
           </div>
           <div class="meta">
-            <span class="hint">2026</span>
-            <a class="link" href="https://github.com/HamzaKaram01" target="_blank">Voir →</a>
+            <span class="hint">Portfolio</span>
+            <a class="link" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio/tree/main/03-Sales-Python" target="_blank">Voir →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>📈 Maven Market (Power BI)</h3>
+          <p>Dashboard interactif : ventes, marge, top produits, segmentation + filtres.</p>
+          <div class="tagRow">
+            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Dashboard</span>
+          </div>
+          <div class="meta">
+            <span class="hint">Portfolio</span>
+            <a class="link" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio/tree/main/04-MavenMarket-PowerBI" target="_blank">Voir →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>🧾 Insurance Feedback (Power BI)</h3>
+          <p>Analyse des retours clients : KPI, satisfaction, tendances et recommandations.</p>
+          <div class="tagRow">
+            <span class="tag">Power BI</span><span class="tag">KPI</span><span class="tag">Storytelling</span>
+          </div>
+          <div class="meta">
+            <span class="hint">Portfolio</span>
+            <a class="link" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio/tree/main/05-Insurance-PowerBI" target="_blank">Voir →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>📁 Tout le portfolio</h3>
+          <p>Voir tous les projets et fichiers (datasets, dashboards, notebooks, README).</p>
+          <div class="tagRow">
+            <span class="tag">GitHub</span><span class="tag">Portfolio</span><span class="tag">Projects</span>
+          </div>
+          <div class="meta">
+            <span class="hint">Main repo</span>
+            <a class="link" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio/tree/main" target="_blank">Ouvrir →</a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- ====== SKILLS ====== -->
     <div class="section" id="skills">
       <div class="sectionTitle">
         <h2>Compétences</h2>
-        <div class="hint">Ce que je maîtrise et ce que j’utilise dans mes projets.</div>
+        <div class="hint">Ce que j’utilise concrètement dans mes projets.</div>
       </div>
 
       <div class="grid">
         <div class="card">
           <h3>Data Analytics</h3>
-          <p>Nettoyage, KPI, analyse descriptive, segmentation, reporting.</p>
+          <p>Nettoyage, KPI, analyse descriptive, segmentation, reporting & recommandations.</p>
           <div class="tagRow"><span class="tag">Insights</span><span class="tag">Business</span></div>
         </div>
 
         <div class="card">
-          <h3>Visualization</h3>
-          <p>Dashboards Power BI, storytelling, mise en page pro.</p>
+          <h3>Data Visualization</h3>
+          <p>Dashboards Power BI, storytelling, mise en page claire et orientée décision.</p>
           <div class="tagRow"><span class="tag">Power BI</span><span class="tag">DAX</span></div>
         </div>
 
         <div class="card">
           <h3>Python</h3>
-          <p>Pandas, Numpy, Matplotlib, notebooks, EDA.</p>
+          <p>Pandas, Numpy, Matplotlib, notebooks, EDA et automatisation simple.</p>
           <div class="tagRow"><span class="tag">Pandas</span><span class="tag">EDA</span></div>
         </div>
       </div>
     </div>
 
+    <!-- ====== CONTACT ====== -->
     <div class="section" id="contact">
       <div class="sectionTitle">
         <h2>Contact</h2>
-        <div class="hint">Dispo pour stage / junior position.</div>
+        <div class="hint">Remplace les infos ci-dessous par les tiennes.</div>
       </div>
 
       <div class="card">
         <p><strong>Email :</strong> tonemail@gmail.com</p>
-        <p><strong>LinkedIn :</strong> <a class="link" href="https://www.linkedin.com/" target="_blank">Ton profil →</a></p>
-        <p><strong>GitHub :</strong> <a class="link" href="https://github.com/HamzaKaram01" target="_blank">Voir →</a></p>
+        <p><strong>LinkedIn :</strong> <a class="link" href="https://www.linkedin.com/" target="_blank">Mon profil →</a></p>
+        <p><strong>GitHub :</strong> <a class="link" href="https://github.com/HamzaKaram01" target="_blank">Mon GitHub →</a></p>
+        <p><strong>Portfolio Repo :</strong> <a class="link" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio" target="_blank">Data-Analyst-Portfolio →</a></p>
       </div>
     </div>
 
