@@ -237,12 +237,106 @@
       text-align:center;
     }
 
-    @media (max-width: 900px){
-      .hero{grid-template-columns: 1fr}
-      h1{font-size: 38px}
-      .grid{grid-template-columns: 1fr}
-      .navlinks{display:none}
-    }
+@media (max-width: 900px){
+
+  .container{
+    padding: 16px;
+  }
+
+  /* NAVBAR plus compacte */
+  .nav{
+    padding: 10px 12px;
+    top: 10px;
+    border-radius: 16px;
+  }
+  .nav .btnPrimary{
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+  .brand{
+    font-size: 14px;
+  }
+  .navlinks{display:none}
+
+  /* HERO -> colonne */
+  .hero{
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 16px;
+  }
+  .heroCard{
+    padding: 18px;
+  }
+  h1{
+    font-size: 32px;
+    line-height: 1.1;
+  }
+  .subtitle{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* Boutons CTA -> full width */
+  .ctaRow{
+    gap: 10px;
+  }
+  .btn{
+    width: 100%;
+    justify-content: center;
+    padding: 12px 14px;
+  }
+
+  /* Carte profil -> plus petite */
+  .profileCard{
+    padding: 18px;
+  }
+  .avatar{
+    width: 110px;
+    height: 110px;
+  }
+  .name{
+    font-size: 16px;
+  }
+  .role{
+    font-size: 12px;
+  }
+
+  /* Sections -> + d'air */
+  .section{
+    margin-top: 18px;
+  }
+  .sectionTitle{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  h2{
+    font-size: 18px;
+  }
+
+  /* Grille -> 1 colonne */
+  .grid{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .card{
+    padding: 16px;
+  }
+
+  /* Dans chaque card : meta plus lisible */
+  .meta{
+    gap: 12px;
+  }
+  .link{
+    width: auto;
+  }
+
+  /* Footer */
+  footer{
+    margin-top: 18px;
+  }
+}
   </style>
 </head>
 
