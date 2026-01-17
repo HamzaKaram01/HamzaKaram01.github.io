@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hamza Karam | Data Analyst</title>
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -29,11 +28,10 @@
       margin:0;
       font-family: Inter, system-ui, Arial, sans-serif;
       color:var(--text);
-      background:
-        radial-gradient(1200px 800px at 10% 10%, rgba(124,58,237,.35), transparent 60%),
-        radial-gradient(900px 600px at 90% 20%, rgba(34,211,238,.25), transparent 55%),
-        radial-gradient(900px 600px at 50% 100%, rgba(124,58,237,.18), transparent 60%),
-        var(--bg);
+      background: radial-gradient(1200px 800px at 10% 10%, rgba(124,58,237,.35), transparent 60%),
+                  radial-gradient(900px 600px at 90% 20%, rgba(34,211,238,.25), transparent 55%),
+                  radial-gradient(900px 600px at 50% 100%, rgba(124,58,237,.18), transparent 60%),
+                  var(--bg);
       overflow-x:hidden;
     }
 
@@ -232,112 +230,6 @@
     }
     .link:hover{color: var(--text); background: rgba(255,255,255,.08)}
 
-    /* Featured big card (mise en avant) */
-    .card.featured{
-      grid-column: 1 / -1;
-      border: 1px solid rgba(34,211,238,.45);
-      background: linear-gradient(135deg, rgba(124,58,237,.26), rgba(34,211,238,.16));
-      box-shadow: 0 18px 70px rgba(34,211,238,.12), 0 18px 70px rgba(124,58,237,.12);
-      padding: 18px;
-    }
-    .card.featured:hover{
-      transform: translateY(-6px);
-      background: linear-gradient(135deg, rgba(124,58,237,.32), rgba(34,211,238,.20));
-    }
-    .featuredTop{
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap:14px;
-      flex-wrap:wrap;
-    }
-    .featuredBadge{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 12px;
-      border-radius: 999px;
-      border:1px solid rgba(34,211,238,.35);
-      background: rgba(0,0,0,.18);
-      color: var(--text);
-      font-weight: 800;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-    .featuredBadge span{
-      width:10px;
-      height:10px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 24px rgba(34,211,238,.35);
-    }
-    .featuredCTA{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-    .link.featuredLink{
-      border:0;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color:#081018;
-      box-shadow: 0 14px 45px rgba(124,58,237,.25);
-      padding: 10px 14px;
-      border-radius: 14px;
-      font-weight: 900;
-    }
-    .link.featuredLink:hover{
-      filter: brightness(1.06);
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-    }
-    .kpiRow{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top: 10px;
-    }
-    .kpi{
-      padding:10px 12px;
-      border-radius: 14px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(0,0,0,.16);
-      color: var(--muted);
-      font-weight: 800;
-      font-size: 12px;
-    }
-    .kpi strong{color: var(--text)}
-
-    /* Stats card (non dossier) */
-    .card.stats{
-      border:1px dashed rgba(255,255,255,.24);
-      background: rgba(255,255,255,.04);
-    }
-    .statsGrid{
-      display:grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .statBox{
-      padding: 10px 12px;
-      border-radius: 14px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(0,0,0,.16);
-    }
-    .statBox .big{
-      font-size: 16px;
-      font-weight: 900;
-      color: var(--text);
-      letter-spacing: -.2px;
-    }
-    .statBox .small{
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 2px;
-      font-weight: 700;
-    }
-
-    /* Footer */
     footer{
       margin: 26px 0 10px;
       color: rgba(185,192,255,.75);
@@ -345,14 +237,11 @@
       text-align:center;
     }
 
-    /* Responsive */
     @media (max-width: 900px){
       .hero{grid-template-columns: 1fr}
       h1{font-size: 38px}
       .grid{grid-template-columns: 1fr}
       .navlinks{display:none}
-      .card.featured{grid-column:auto}
-      .statsGrid{grid-template-columns: 1fr}
     }
   </style>
 </head>
@@ -375,15 +264,15 @@
         <div class="badge"><span></span> Portfolio • Data Analytics</div>
         <h1>Mes projets par <span class="grad">catégories</span>.</h1>
         <p class="subtitle">
-          Excel, Python (Pandas), Power BI, SQL… Clique sur une catégorie pour accéder directement au dossier
-          correspondant dans mon GitHub.
+          Data Analyst (Excel, Power BI, Python). J’analyse, je nettoie, je construis des KPI et des dashboards
+          pour raconter une histoire avec les données.
         </p>
 
         <div class="ctaRow">
           <a class="btn btnPrimary" href="https://github.com/HamzaKaram01" target="_blank">GitHub</a>
-          <a class="btn" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio" target="_blank">Repo Portfolio</a>
+          <a class="btn" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio" target="_blank">Portfolio</a>
           <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-          <a class="btn" href="assets/cv.pdf" target="_blank">Télécharger CV</a>
+          <a class="btn" href="assets/cv.pdf" target="_blank">CV</a>
         </div>
       </div>
 
@@ -395,21 +284,20 @@
         <div class="chips">
           <span class="chip">KPI</span>
           <span class="chip">Dashboards</span>
-          <span class="chip">Data Cleaning</span>
-          <span class="chip">SQL</span>
+          <span class="chip">Visualization</span>
         </div>
       </div>
     </div>
 
-    <!-- ====== CATEGORIES ====== -->
+    <!-- ====== CATEGORIES / PROJECTS ====== -->
     <div class="section" id="projects">
       <div class="sectionTitle">
         <h2>Catégories de projets</h2>
-        <div class="hint">Les cartes “Dossier” ouvrent une catégorie. La carte “Portfolio complet” est mise en avant.</div>
+        <div class="hint">Clique sur une carte → tu arrives au dossier GitHub.</div>
       </div>
 
       <div class="grid">
-        <!-- Excel -->
+        <!-- Excel Projects -->
         <div class="card">
           <h3>📗 Excel Projects</h3>
           <p>Projets Excel : nettoyage, KPI, TCD, visualisations et reporting.</p>
@@ -422,7 +310,7 @@
           </div>
         </div>
 
-        <!-- Pandas -->
+        <!-- Pandas Projects -->
         <div class="card">
           <h3>🐼 Pandas Projects</h3>
           <p>Projets Python : EDA, nettoyage, analyses, visualisations (Pandas).</p>
@@ -435,7 +323,7 @@
           </div>
         </div>
 
-        <!-- Power BI -->
+        <!-- Power BI Reports -->
         <div class="card">
           <h3>📊 Power BI Reports</h3>
           <p>Dashboards Power BI : KPI, DAX, storytelling, analyses interactives.</p>
@@ -448,7 +336,7 @@
           </div>
         </div>
 
-        <!-- SQL + Power BI -->
+        <!-- SQL PowerBI Projects -->
         <div class="card">
           <h3>🧠 SQL PowerBI Projects</h3>
           <p>Projets SQL + Power BI : requêtes, modélisation, intégration et reporting.</p>
@@ -461,68 +349,42 @@
           </div>
         </div>
 
-        <!-- Stats / guidance card (not a folder) -->
-        <div class="card stats">
-          <h3>✨ Comment lire le portfolio</h3>
-          <p>Chaque catégorie contient plusieurs projets. Commence par “Portfolio complet” si tu veux tout voir.</p>
-          <div class="statsGrid">
-            <div class="statBox">
-              <div class="big">4</div>
-              <div class="small">Catégories principales</div>
-            </div>
-            <div class="statBox">
-              <div class="big">Excel • Python</div>
-              <div class="small">Analyse & EDA</div>
-            </div>
-            <div class="statBox">
-              <div class="big">Power BI</div>
-              <div class="small">Dashboards & DAX</div>
-            </div>
-            <div class="statBox">
-              <div class="big">SQL</div>
-              <div class="small">Requêtes & Modélisation</div>
-            </div>
+        <!-- Whole repo -->
+        <div class="card">
+          <h3>📁 Voir tout le Portfolio</h3>
+          <p>Accéder à tous les fichiers, dossiers, datasets, notebooks et README.</p>
+          <div class="tagRow">
+            <span class="tag">GitHub</span><span class="tag">Portfolio</span><span class="tag">All</span>
           </div>
           <div class="meta">
-            <span class="hint">Astuce</span>
-            <a class="link" href="#skills">Voir compétences →</a>
+            <span class="hint">Repo</span>
+            <a class="link" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio/tree/main" target="_blank">Ouvrir →</a>
           </div>
         </div>
 
-        <!-- Featured: Whole repo -->
-        <div class="card featured">
-          <div class="featuredTop">
-            <div>
-              <div class="featuredBadge"><span></span> Portfolio complet (recommandé)</div>
-              <h3>📁 Voir tout le Portfolio</h3>
-              <p>
-                Accède à <strong>tout</strong> : dossiers, projets, datasets, notebooks, dashboards et README.
-                C’est la meilleure entrée pour comprendre l’ensemble de mon travail.
-              </p>
-            </div>
 
-            <div class="featuredCTA">
-              <a class="link featuredLink" href="https://github.com/HamzaKaram01/Data-Analyst-Portfolio/tree/main" target="_blank">
-                Ouvrir le portfolio →
-              </a>
-              <a class="link" href="#contact">Me contacter →</a>
-            </div>
+        <!-- Optional: Contact shortcut -->
+        <div class="card">
+          <h3>✉️ Me contacter</h3>
+          <p>Stage / Junior position — je réponds rapidement.</p>
+          <div class="tagRow">
+            <span class="tag">Email</span><span class="tag">LinkedIn</span><span class="tag">Networking</span>
           </div>
-
-          <div class="kpiRow">
-            <div class="kpi"><strong>Conseil :</strong> commence ici</div>
-            <div class="kpi"><strong>Contenu :</strong> projets + fichiers</div>
-            <div class="kpi"><strong>Format :</strong> Excel / Power BI / Python / SQL</div>
+          <div class="meta">
+            <span class="hint">Section</span>
+            <a class="link" href="#contact">Aller →</a>
           </div>
         </div>
       </div>
     </div>
 
+
+
     <!-- ====== SKILLS ====== -->
     <div class="section" id="skills">
       <div class="sectionTitle">
         <h2>Compétences</h2>
-        <div class="hint">Outils & méthodes que j'utilise sur mes projets.</div>
+        <div class="hint">Outils & méthodes que j’utilise sur mes projets.</div>
       </div>
 
       <div class="grid">
@@ -554,7 +416,7 @@
       </div>
 
       <div class="card">
-        <p><strong>Email :</strong> tonemail@gmail.com</p>
+        <p><strong>Email :</strong> hamzakaram535@gmail.com</p>
         <p><strong>LinkedIn :</strong> <a class="link" href="https://www.linkedin.com/" target="_blank">Mon profil →</a></p>
         <p><strong>GitHub :</strong> <a class="link" href="https://github.com/HamzaKaram01" target="_blank">Mon GitHub →</a></p>
       </div>
